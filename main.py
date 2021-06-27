@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     api = Api()
     window = webview.create_window(strattitle,
-                            startlink,
+                            startlink,on_top=True,
                             width=sizew, height=sizeh,
                             resizable=True,
                             frameless=True,js_api=api)
