@@ -1,6 +1,8 @@
 # pywebview-Frameless-boilerplate
 
 *added On top auto False after UI show (3 secs timeout). also Demo "onshow" Function and call.
+*Bootstrap already hooked.
+
 
 Based on:
 https://github.com/r0x0r/pywebview
