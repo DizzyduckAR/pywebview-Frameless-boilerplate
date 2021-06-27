@@ -52,3 +52,6 @@ Blank.html (main html)
 CSS files
 JS Files
 image Files
+
+MIT on each file.
+sparkly credits for all the open source projects is under work :D
