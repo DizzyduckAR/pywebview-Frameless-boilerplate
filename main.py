@@ -12,7 +12,11 @@ sizew=800
 sizeh=600
 #WebView Start Settings
 
-
+#On UI Show. Auto stop On top after 3 secs from Ui show.
+def on_shown():
+    print('on shown')
+    time.sleep(3)
+    window.on_top = False
 #allow to call your funcs with onclick="pywebview.api.Funcname()"  on your html.
 class Api:
 
@@ -102,5 +106,5 @@ if __name__ == '__main__':
                             width=sizew, height=sizeh,
                             resizable=True,
                             frameless=True,js_api=api)
-    # window.shown += on_shown
+    window.shown += on_shown
     webview.start()
