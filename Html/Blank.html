@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+
+    <meta charset="utf-8">
+    <link href="icon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blank Frameless Window</title>
+    <!-- BEGIN: CSS Assets-->
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <!-- <link href='jquery.gridly.css' rel='stylesheet' type='text/css'>
+    <link href='sample.css' rel='stylesheet' type='text/css'> -->
+
+
+
+    <script src="bootstrap.min.js"></script>
+
+
+
+
+    <!-- END: CSS Assets-->
+    <style>
+        #editorbot {
+            float: left;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+        }
+        
+        #editor {
+            float: left;
+            cursor: pointer;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 30px;
+            width: 95%;
+            height: 600px;
+        }
+        
+        .gridly {
+            position: relative;
+            /* width: auto;
+            height:auto; */
+        }
+        
+        .brick.small {
+            float: left;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            width: 140px;
+            height: 160px;
+        }
+        
+        .brick.large {
+            float: left;
+            cursor: pointer;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 250px;
+            height: 250px;
+        }
+        
+        body {
+            overflow: hidden;
+            /* Hide scrollbars */
+        }
+        /*** Window Title ***/
+        
+        .scoller {
+            max-height: auto;
+            height: 900px;
+            overflow: auto;
+        }
+        
+        .scoller2 {
+            max-height: auto;
+            overflow: auto;
+        }
+        
+        header {
+            width: 100%;
+            display: flex;
+            background: rgba(0, 0, 0, .2);
+            font-family: Segoe UI;
+            font-size: 9pt;
+        }
+        
+        .title-bar {
+            padding: 0.35em 0.5em;
+            flex-grow: 1;
+        }
+        
+        .title-btn {
+            padding: 0.35em 1.0em;
+            cursor: pointer;
+            vertical-align: bottom;
+            font-family: Webdings;
+            font-size: 10pt;
+        }
+        
+        .title-btn:hover {
+            /* background: rgba(0, 0, 0, .2); */
+            background: #35dc96;
+        }
+        
+        .title-btn-min:hover {
+            background: #35dc96;
+        }
+        
+        .title-btn-close:hover {
+            background: #dc3545;
+        }
+        
+        .title-btn-full:hover {
+            background: #ebd61f;
+        }
+        
+        .title-btn-website:hover {
+            background: #14aae6;
+        }
+        
+        .mover2 {
+            cursor: pointer;
+        }
+        
+        img.mover {
+            margin-left: 16%;
+            cursor: pointer;
+        }
+        
+        .row {
+            /* A row is basically just a flexbox container */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .w-50 {
+            /* Fill almost half the row, leaving a bit of margin */
+            width: 48%;
+        }
+        
+        .w-100 {
+            /* Fill the entire row */
+            width: 100%;
+        }
+    </style>
+    <header class="pywebview-drag-region pywebview-resize" id="topframe">
+        <span class="title-bar pywebview-drag-region">Blank Frameless Window</span>
+        <span class="title-btn title-btn-website" onclick="pywebview.api.bottbar('website')"><img title="Bot Place Site"  src="icon.png" height="25" width="25"></span>
+        <span class="title-btn" onclick="pywebview.api.topbar('mini')">0</span>
+        <span class="title-btn title-btn-full" onclick="pywebview.api.topbar('full')">1</span>
+        <span class="title-btn title-btn-close" onclick="pywebview.api.topbar('close')">r</span>
+
+    </header>
+</head>
+
+
+
+<body class="main">
+
+
+
+    <div class="flex">
+
+
+        <div class="content">
+            <!-- BEGIN: Top Bar -->
+            <!-- <div id="utilbar" class="top-bar"></div> -->
+            <div id="mainhead" class="header text-center box flex " style="display: flex; justify-content: space-around"></div>
+            <div class="scoller mt-3">
+                <div class="flex flex-wrap mb-5 " id="mainapp">
+
+                </div>
+                <div onmousedown="pywebview.api.resizedrag()" title="Click And Hold Then Drag To Resize" style="position:absolute; bottom:0; right:0;"> <img draggable="false" src="corner-handle.png" height="40" width="40" /></div>
+            </div>
+        </div>
+        <!-- END: Content -->
+    </div>
+
+    <!-- 
+    <script src="app.js"></script>
+    <script src="b.js"></script> -->
+
+
+
+
+
+
+
+</body>
+
+</html>
