@@ -37,7 +37,7 @@ import sys<br>
 One Click Batch file:<br>
 Req- python , python venv
 
-Seld deploy and pip all requirements into local venv.<br>
+Self deploy and pip all requirements into local venv.<br>
 
 ```
 python -m venv env
