@@ -1,6 +1,7 @@
 # pywebview-Frameless-boilerplate (Updated)
 
 ***  New Update ***
+
 Added:
 - Tailwind. use any tailwind syntax.
 - Alpine js. call alpine as you wish.
