@@ -20,6 +20,44 @@ Added:
 - full Events functions hooked to the base. (on load / on exit / on dom ready ...)
 - Added Framework Buy button (optional: allow you to buy the original template and src) 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************  old ***************************************************************
 *Added On top auto False after UI show (3 secs timeout). also Demo "on show" Function and call.<br>
 *Bootstrap already hooked.
 
