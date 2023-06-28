@@ -6,6 +6,7 @@ Added:
 - Tailwind. use any tailwind syntax.
 - Alpine js. call alpine as you wish.
 - HTMX. Get/Post/Put into local divs with core header protection
+- Lottie Player with some Demos
 - All libs are now Python native libs you only need to pip pywebview.
 - Renew the Top bar with more space for logo and controls. added light/dark / Mono.
 - moved Resize Function to a border on the right bottom and left sides.
