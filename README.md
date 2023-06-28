@@ -1,6 +1,17 @@
 # pywebview-Frameless-boilerplate (Updated)
 
 ***  New Update ***
+Install:
+-req: Python install on the system
+-cmd: from Commands.txt cmd the 3 lines to open local python env and pip pywebview into it
+-VS code: open the folder on vs code or any other IDE and run main.py
+
+App pipe line:
+-main.py will import the files from AppComponents.
+-mr_importer will import the list it holds.
+-mr_windowinfo is our window object class and we push data into it immediately.
+-mr_API holds our API class and handlers. it will also hold the "start window" process.
+the app will start. build window object. call the API to start window and when dom ready function was trigger it will write the window data and handlers
 
 Added:
 - Tailwind. use any tailwind syntax.
