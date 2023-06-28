@@ -20,17 +20,24 @@ Added:
 - full Events functions hooked to the base. (on load / on exit / on dom ready ...)
 - Added Framework Buy button (optional: allow you to buy the original template and src) 
 
+Image1:
+
+![python_hU91d2Sdd3](https://github.com/DizzyduckAR/pywebview-Frameless-boilerplate/assets/52171360/423dcfa4-3bbd-42a0-be6c-53662d5711bc)
+
+Image2:
+
+![python_gEZJlVbE4W](https://github.com/DizzyduckAR/pywebview-Frameless-boilerplate/assets/52171360/cf3b1218-9d27-429f-a99f-d6f86d6b9502)
 
 
+Gifs:
 
+*Demo python to HTML
 
+![python_9jMCm9Wy1d](https://github.com/DizzyduckAR/pywebview-Frameless-boilerplate/assets/52171360/1d14a86a-6ff2-4c83-9783-8d7414d0bfeb)
 
+*Demo2
 
-
-
-
-
-
+![python_ZpNnjIr39K](https://github.com/DizzyduckAR/pywebview-Frameless-boilerplate/assets/52171360/7da0301f-b8e2-4502-9ac7-ddc4244da6bc)
 
 
 
