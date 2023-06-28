@@ -2,10 +2,9 @@
 **/__pycache__/
 **/myenv
 **/logs
-**.pyc
-.zip
-.bat
-**.zip
-**.bat
+**/OLD
+*.pyc
+*.zip
+*.bat
 # does not ignore the README.md file
 # !README.md
