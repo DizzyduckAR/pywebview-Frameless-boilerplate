@@ -140,7 +140,7 @@ def jsrunner(mainid='',doter='',typer="=",valuer='',window=''):
         print('fail to write jsrunner')
 
 def htmlread(filename):
-    HTMLFile = open("AppComponents\\html particals\\"+filename, "r")
+    HTMLFile = open("AppComponents\\HtmlParticles\\"+filename, "r")
     return HTMLFile.read()
 
 class Api ():
