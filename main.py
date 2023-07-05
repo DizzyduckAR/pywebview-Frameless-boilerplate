@@ -21,6 +21,7 @@ HTMLPath='UI/index.html'  # local or online Path for the web
 AppSizeW=1000    # W size
 AppSizeH=860    # H size
 winlogo= 'images/favicon.png'
+
 # class init into mywindow as object with Appname AppVer targetwindow ...
 mywindow= windowinfo(Appname,AppVer,'targetwindow will self write from mywindow.targetwindow=targetwindow',DebugUI,HTMLPath,AppSizeW,AppSizeH,winlogo)
 ####################################

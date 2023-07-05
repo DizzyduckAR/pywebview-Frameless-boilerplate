@@ -1,6 +1,7 @@
 # ignores all *
 **/__pycache__/
 **/myenv
+**/Template
 **/logs
 **/OLD
 *.pyc

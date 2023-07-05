@@ -11,6 +11,8 @@ from AppComponents.mr_importer import *
 from main import mywindow
 ####################################
 
+
+
 # Window Resize classes and Functions
 ####################################
 class POINT(Structure):
@@ -106,9 +108,19 @@ def on_loaded():
     print('DOM is ready')
     #Cancel window on_Top 
     mywindow.targetwindow.on_top = False
-    
-    #Write Window icon and title
-    api.startappwindow()
+
+    #Set Head
+    dict = {'appname': mywindow.Appname,'appver': mywindow.AppVer,'applogo': mywindow.winlogo}
+    jsrunner('wintophandlers','innerHTML',"=",htmlread('tophandlers.html').format(**dict),mywindow.targetwindow)
+
+    #set bottom
+    jsrunner('winbothandlers','innerHTML',"=",htmlread('bottomhandler.html'),mywindow.targetwindow)
+
+    #set main
+    jsrunner('allmain','innerHTML',"=",htmlread('wrap.html'),mywindow.targetwindow)
+
+
+    # api.startappwindow()
 
     # unsubscribe event listener
     webview.windows[0].events.loaded -= on_loaded
@@ -126,6 +138,10 @@ def jsrunner(mainid='',doter='',typer="=",valuer='',window=''):
         window.evaluate_js(testvar)
     except:
         print('fail to write jsrunner')
+
+def htmlread(filename):
+    HTMLFile = open("AppComponents\\html particals\\"+filename, "r")
+    return HTMLFile.read()
 
 class Api ():
 
@@ -208,9 +224,7 @@ class Api ():
                 </lottie-player> 
                 '''
         jsrunner('emptydata','innerHTML',"=",mydata ,mywindow.targetwindow)
-        # test=mywindow.targetwindow.get_elements('#emptydata')
-        # print(test)
-    
+
     # Loading bar
     def loaderdemo(self):
         mydata='''
